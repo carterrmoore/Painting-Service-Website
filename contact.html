@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body style="display: flex;
+  min-height: 100vh;
+  flex-direction: column;">
+          <nav class="blue-grey lighten-3">
+            <div class="nav-wrapper container blue-grey lighten-3">
+              <a href="index.html" class="brand-logo">McPhearson Paint</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+
+
+
+
+
+
+
+
+          <!-- MAIN -->
+
+
+
+
+
+
+
+          <main style="flex: 1 0 auto;" class="container">
+
+
+
+            <div class="row" style="margin: 10vh 0 2vh";>
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                      <input id="first_name" type="text" class="validate">
+                      <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">Last Name</label>
+                    </div>
+                  </div>        
+            
+                  <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mode_edit</i>
+                          <textarea id="textarea1" class="materialize-textarea"></textarea>
+                          <label for="textarea1">How Can We Help?</label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  
+                  </div>
+                  <button class="btn blue-grey" style="margin-bottom: 4vh">Submit</button>
+                </form>
+              </div>
+
+
+
+                  <!-- FIXED ACTION BTN -->
+            
+                  <div class="fixed-action-btn">
+                    <a class="btn-floating btn-large red">
+                      <i class="large material-icons">keyboard_arrow_up</i>
+                    </a>
+                    <ul>
+                      <li><a class="btn-floating red"><i class="material-icons">event_available</i></a></li>
+                      <li><a class="btn-floating yellow darken-1"><i class="material-icons">explore</i></a></li>
+                      <li><a class="btn-floating green"><i class="material-icons">phone</i></a></li>
+                      <li><a class="btn-floating blue"><i class="material-icons">textsms</i></a></li>
+                    </ul>
+                  </div>
+                
+                
+                </main>
+
+
+
+
+
+            <!-- FIXED ACTION BTN -->
+          
+            <div class="fixed-action-btn">
+              <a class="btn-floating btn-large red">
+                <i class="large material-icons">keyboard_arrow_up</i>
+              </a>
+              <ul>
+                <li><a aria-label="Schedule" class="btn-floating red"><i class="material-icons">event_available</i></a></li>
+                <li><a aria-label="Learn More"  class="btn-floating yellow darken-1"><i class="material-icons">explore</i></a></li>
+                <li><a aria-label="Call"  class="btn-floating green"><i class="material-icons">phone</i></a></li>
+                <li><a aria-label="Text"  class="btn-floating blue"><i class="material-icons">textsms</i></a></li>
+              </ul>
+            </div>
+          
+          
+          </main>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-- FOOTER -->
+
+
+
+
+
+
+          <footer class="page-footer grey lighten-4">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="blue-grey-text">McPhearson Paint</h5>
+                  <p class="blue-grey-text text-lighten-2">The best paint company in town! Handling each job with attention and care since 2002</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="blue-grey-text">Learn More</h5>
+                  <ul>
+                    <li><a class="blue-grey-text text-lighten-2" href="#!">Why Us</a></li>
+                    <li><a class="blue-grey-text text-lighten-2" href="#!">Services</a></li>
+                    <li><a class="blue-grey-text text-lighten-2" href="#!">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container grey-text">
+                © 2014 McPhearson Paint Co.
+                <a class="grey-text right" href="#!">Built by Carter Moore</a>
+                </div>
+            </div>
+          </footer>
+
+          <script src="index.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          <script>  
+          $(document).ready(function(){
+      
+              $('.parallax').parallax();
+              $('.slider').slider({height: 650});
+              $('.fixed-action-btn').floatingActionButton();
+              $('.modal').modal();
+              $('.sidenav').sidenav();
+      
+          });
+          </script>
+        </body>
+      </html>
