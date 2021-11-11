@@ -5,23 +5,34 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
 
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
-    <body style="display: flex;
+
+
+
+
+
+
+    <body 
+    style="display: flex;
     min-height: 100vh;
     flex-direction: column;">
+
+
             <nav class="white">
               <div class="nav-wrapper container">
                 <a href="index.html" class="brand-logo blue-grey-text" style="font-family: 'Zen Antique', serif;">McPhearson Paint</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons blue-grey-text">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                   <li><a class="blue-grey-text" href="Services.html">Services</a></li>
                   <li><a class="blue-grey-text" href="contact.html">Contact</a></li>
@@ -29,7 +40,8 @@
               </div>
             </nav>
 
-            <ul class="sidenav" id="mobile-demo">
+            <ul class="sidenav blue-grey-text" id="mobile-demo">
+              <li><a class="blue-grey-text" href="index.html"></a></li>
               <li><a class="blue-grey-text" href="index.html">Home</a></li>
               <li><a class="blue-grey-text" href="Services.html">Services</a></li>
               <li><a class="blue-grey-text" href="contact.html">Contact</a></li>
@@ -48,18 +60,7 @@
 
 
 
-
-
-
             <main style="flex: 1 0 auto;">
-
-
-
-
-
-
-
-
 
 
 
@@ -158,10 +159,10 @@
 
                   <h5>All first time customers can enjoy 10% off any interior painting!</h5>
                   <br/>
-                  <p>Offer ends 1/31/22</p>
+                  <p>Offer ends 6/31/22</p>
                 </div>
                 <div class="modal-footer">
-                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Got It!</a>
                 </div>
               </div>
             
@@ -245,11 +246,11 @@
     <script>  
     $(document).ready(function(){
 
+        $('.sidenav').sidenav();
         $('.parallax').parallax();
         $('.slider').slider({height: 650});
         $('.fixed-action-btn').floatingActionButton();
         $('.modal').modal();
-        $('.sidenav').sidenav();
 
     });
     </script>
